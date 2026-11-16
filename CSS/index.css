@@ -174,6 +174,9 @@ a.btn {
     justify-content: center;
 
     background: linear-gradient(90deg,rgba(31, 31, 31, 0.2) 0%, rgba(31, 31, 31, 0.2) 100%), url("../media/Home-banner.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
  }
 
  .hero__block {
@@ -183,3 +186,48 @@ a.btn {
     gap: var(--size-md);
     width: 100%;
  }
+
+
+ @media (max-width: 760px) {
+    .header__nav {
+        display: none;
+
+    }
+ }
+
+ @media (min-width: 760px) {
+    .ri-menu-line {
+        display: none;
+    }
+ }
+
+ /* CTA */
+
+.cta__block {
+    display: flex;
+    gap: var(--size-lg);
+    max-width: var(--size-block);
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cta__image {
+    flex: 1 1 320px;
+}
+
+
+.cta__info-title {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-sm);
+   
+    
+}
+
+.cta__info {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 320px;
+    align-items: start;
+    gap: var(--size-md)
+}

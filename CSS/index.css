@@ -101,6 +101,14 @@ a, .font-link {
         color: var(--color-text);
     }
 
+    &.btn--submit {
+        background-color: var(--color-brand);
+        color: var(--color-light);
+        padding: var(--size-sm) var(--size-sm);
+        justify-content: center;
+        border: none;
+    }
+
     &:hover {
         opacity: 80%;
     }
@@ -114,6 +122,9 @@ input, select {
     background-color: var(--color-light);
     border: 1px solid transparent;
 
+    font: var(--font-p);
+    color: var(--color-text);
+
     &:hover {
         opacity: 80%;
     }
@@ -121,6 +132,12 @@ input, select {
     &:focus {
         border: 1px solid var(--color-text);
         outline: none;
+    }
+
+    &::placeholder {
+        font: var(--font-p);
+        color: var(--color-text);
+        opacity: 40%;
     }
 
     transition: opacity 250ms, border 250ms;
@@ -282,6 +299,34 @@ label:not([for="acceptance"]) {
 
 /*SERVICES*/
 
+.services {
+
+}
+
+.services__block {
+   display: flex;
+   flex-direction: column;
+   align-items: start;
+   gap: var(--size-sm);
+}
+
+.services__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax (320px, 1fr));
+    gap: var(--size-sm);
+    padding: var(--size-sm) 0;
+    align-self: stretch;
+}
+
+.services__card {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-sm);
+
+    & img {
+        max-height: 11rem;
+    }
+}
 
 /*PRICES*/
 
@@ -369,6 +414,25 @@ label:not([for="acceptance"]) {
     }
 }
 
- {
+.contact__block {
+    display: flex;
+    gap: var(--size-lg);
+    flex-wrap: wrap;
+}
 
+.contact__map {
+    flex: 1 1 320px;
+}
+
+.contact__content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-md);
+    flex: 1 1 150px;
+}
+
+.contact__heading {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-sm);
 }

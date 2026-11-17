@@ -214,24 +214,27 @@
 
 <section class="contact section"> 
     <div class="contact__block block">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12318.894016003482!2d-0.34734079999999995!3d39.4755747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd60487c5d604077%3A0x150fdf31fdc5a6f6!2sUniversidad%20Polit%C3%A9cnica%20de%20Valencia%20(UPV)!5e0!3m2!1ses!2ses!4v1794844295840!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        <iframe class="contact__map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12318.894016003482!2d-0.34734079999999995!3d39.4755747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd60487c5d604077%3A0x150fdf31fdc5a6f6!2sUniversidad%20Polit%C3%A9cnica%20de%20Valencia%20(UPV)!5e0!3m2!1ses!2ses!4v1794844295840!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
         <div class="contact__content">
+            <div class="contact__heading">
             <h2>Contact with us</h2>
             <p>You can also check other ways to contact us on the contact page.</p>
+            </div>
             <form class="form" action="#" method="post">
                 <div class="form__columms">
                     <div class="form__field">
                         <label for="name">Name</label>
-                        <input id="name" name="name" type="text">
+                        <input id="name" name="name" type="text" placeholder="Name">
                     </div>
                     <div class="form__field">
                         <label for="surname"> Surname</label>
-                        <input id="surname" name="surname" type="text">
+                        <input id="surname" name="surname" type="text" placeholder="Surname">
                     </div>
                 </div>
                 <div class="form__field">
                         <label for="email">E-mail</label>
-                        <input id="email" name="email" type="email">
+                        <input id="email" name="email" type="email" placeholder="E-mail">
                     </div>
                     <div class="form__field">
                         <label for="services">services</label>
@@ -246,7 +249,7 @@
                         <label for="acceptance">I have read and accept the privacy policy</label>
                         <input id="acceptance" name="acceptance" type="checkbox">
                     </div>
-                    <button type="submit" class="btn btn--dark"> Send <i class="ri-arrow-right-up-line"></i> </button>
+                    <button type="submit" class="btn btn--submit"> Send <i class="ri-arrow-right-up-line"></i> </button>
             </form>
         </div>
     </div>

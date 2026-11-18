@@ -358,7 +358,7 @@ label:not([for="acceptance"]) {
 }
 
 .block__contact {
-    background-color: var(--color-light);
+
     display: flex;
     gap: var(--size-sm);
 

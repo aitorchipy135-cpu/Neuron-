@@ -42,6 +42,11 @@
     font-family: "Instrument Sans", sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+
+}
+
 img {
     max-width: 100%;
     width: 100%;
@@ -245,6 +250,57 @@ label:not([for="acceptance"]) {
     }
  }
 
+ /*SMALL*/
+
+.hero--small {
+    max-width: var(--size-canvas);
+    margin: 0 auto;
+    padding: 0 var(--size-xs);
+}
+
+.hero--small__background {
+     background-color: var(--color-text);
+    padding: var(--size-md);
+    color: var(--color-light);
+    min-height: 30vh;
+    border-radius: var(--radius-small);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &.hero--small__background--services {
+        background: linear-gradient(90deg,rgba(31, 31, 31, 0.2) 0%, rgba(31, 31, 31, 0.8) 100%), url("../media/Services-banner.avif");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    &.hero--small__background--about {
+        background: linear-gradient(90deg,rgba(31, 31, 31, 0.2) 0%, rgba(31, 31, 31, 0.8) 100%), url("../media/About-banner.webp");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    &.hero--small__background--news {
+        background: linear-gradient(90deg,rgba(31, 31, 31, 0.2) 0%, rgba(31, 31, 31, 0.8) 100%), url("../media/News-banner.webp");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    &.hero--small__background--contact {
+        background: linear-gradient(90deg,rgba(31, 31, 31, 0.2) 0%, rgba(31, 31, 31, 0.8) 100%), url("../media/Contact-banner.webp");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+.hero--samll__block {
+
+    
+}
+
+
  /* CTA */
 
 .cta__block {
@@ -285,6 +341,7 @@ label:not([for="acceptance"]) {
     display: flex;
     flex-wrap: wrap;
 
+
 }
 
 .features__card {
@@ -298,6 +355,13 @@ label:not([for="acceptance"]) {
         display: inline-flex;
         gap: var(--size-xs);
     }
+}
+
+.block__contact {
+    background-color: var(--color-light);
+    display: flex;
+    gap: var(--size-sm);
+
 }
 
 
